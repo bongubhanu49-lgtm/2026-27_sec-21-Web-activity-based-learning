@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Portfolio</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #20202e, #334155);
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            color: #38bdf8;
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(148, 163, 184, 0.12));
+            box-shadow: 0 0 18px rgba(56, 189, 248, 0.15);
+        }
+
+        nav {
+            background-color: #334155;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            display: inline-block;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+            border-left: 4px solid #38bdf8;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+        }
+
+        h2 {
+            color: #1e40af;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <p>Welcome to My Website</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="box" id="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Bhanu Prakash.</p>
+            <p>I am a first-year B.Tech student
+            interested in Cyber Security and Technology.</p>
+        </div>
+
+        <div class="box" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>B.Tech - Cyber Security</li>
+                <li>First Year Student</li>
+            </ul>
+        </div>
+
+        <div class="box" id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Python Basics</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Problem Solving</li>
+                <li>Video Editing</li>
+            </ul>
+        </div>
+
+        <div class="box" id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Reading Books</li>
+                <li>Learning New Technologies</li>
+                <li>Solving Problems</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>My Project</h2>
+            <p>Password Strength Analysis</p>
+            <p>This project helps understand
+            the strength of passwords.</p>
+        </div>
+
+        <div class="box" id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: bongubhanu49@gmail.com</p>
+            <p>Location: Gudivada, Andhra Pradesh, India</p>
+
+</body>
+</html>
