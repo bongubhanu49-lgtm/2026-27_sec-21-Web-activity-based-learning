@@ -4,4 +4,4 @@ Branch: Cyber security
 Case Studies: 
 1.Personal Portfolio Website
 2.Bakery and Cake Shop Website
-3.College Information and Admissions Website
+3.Tourism and Heritage Website
