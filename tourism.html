@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourism and Heritage</title>
+    <style>
+        :root { --blue: #123b68; --ink: #203040; --paper: #fff; --sky: #e8f4fb; --accent: #e4a247; }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--ink);
+            background: linear-gradient(180deg, #dceefa 0, #f8fbfd 420px, var(--sky) 100%);
+        }
+        header {
+            padding: 68px 20px;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(135deg, #123b68, #176b83);
+        }
+        header h1 { margin: 0; font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1.1; }
+        header p { margin: 14px 0 0; color: #e6f4f8; font-size: 1.15rem; }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            padding: 12px;
+            background: #0c2e52;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 12px;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav a:hover,
+        nav a:focus { text-decoration: underline; }
+        main {
+            width: min(1100px, 92%);
+            margin: 0 auto;
+        }
+        .intro {
+            padding: 42px 12px 30px;
+            text-align: center;
+        }
+        .intro h2 { margin: 0 0 8px; color: var(--blue); font-size: 1.9rem; }
+        .intro p { max-width: 650px; margin: 0 auto; }
+        .places {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+        .place {
+            overflow: hidden;
+            border-radius: 12px;
+            background: var(--paper);
+            box-shadow: 0 4px 14px #123b6820;
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+        .place:hover { transform: translateY(-5px); box-shadow: 0 12px 24px #123b6830; }
+        .place img {
+            display: block;
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+        .place-content { padding: 18px; }
+        .place h3 { margin: 0 0 8px; color: var(--blue); }
+        .place p { margin: 8px 0; }
+        .highlight { color: #345b26; font-weight: bold; }
+        .tips {
+            margin: 28px 0;
+            padding: 20px 24px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 4px 14px #123b6818;
+        }
+        .tips h2 { margin-top: 0; color: var(--blue); }
+        .tips li { margin: 7px 0; }
+        footer {
+            margin-top: 40px;
+            padding: 24px 18px;
+            color: #fff;
+            background: var(--blue);
+            text-align: center;
+        }
+        footer p { margin: 0; }
+        a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+        }
+        @media (max-width: 760px) {
+            .places { grid-template-columns: 1fr; }
+            header h1 { font-size: 2rem; }
+            nav a { display: inline-block; margin: 4px 8px; }
+            .intro { padding-top: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Explore India</h1>
+        <p>Discover the beauty and heritage of India!</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#destinations">Destinations</a>
+        <a href="#tips">Travel tips</a>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>Places to inspire your next trip</h2>
+            <p>From timeless monuments to peaceful waterways, India offers a journey for every traveler.</p>
+      </section>
+
+        <section id="destinations" class="places" aria-label="Featured destinations">
+            <article class="place">
+                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523" alt="The Taj Mahal in Agra" loading="lazy">
+                <div class="place-content">
+                    <h3>Taj Mahal</h3>
+                    <p>Visit this world-famous marble mausoleum in Agra, celebrated for its history and architecture.</p>
+                    <p class="highlight">Best for: history and architecture</p>
+                </div>
+            </article>
+
+            <article class="place">
+                <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944" alt="Kerala backwaters and greenery" loading="lazy">
+                <div class="place-content">
+                    <h3>Kerala</h3>
+                    <p>Enjoy tranquil backwaters, lush landscapes, and the welcoming culture of southern India.</p>
+                    <p class="highlight">Best for: nature and relaxation</p>
+                </div>
+            </article>
+
+            <article class="place">
+                <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a" alt="Historic architecture in Jaipur" loading="lazy">
+                <div class="place-content">
+                    <h3>Jaipur</h3>
+                    <p>Explore grand forts, colorful markets, and the rich heritage of Rajasthan's capital.</p>
+                    <p class="highlight">Best for: forts and local culture</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="tips" class="tips">
+            <h2>Travel tips</h2>
+            <p>A little preparation helps make a trip more enjoyable.</p>
+            <ul>
+                <li>Plan your route and check local opening hours.</li>
+                <li>Book transport and accommodation ahead when possible.</li>
+                <li>Keep valuables secure and carry copies of important documents.</li>
+                <li>Respect local customs and leave natural places clean.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
