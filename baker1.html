@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sweet Treats Bakery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff8f0;
+            color: #333;
+        }
+        header,
+        footer {
+            text-align: center;
+            color: white;
+        }
+        header {
+            background: #7b2d26;
+            padding: 25px;
+        }
+        nav,
+        footer {
+            background: #54211d;
+        }
+        nav {
+            text-align: center;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: yellow;
+        }
+        .banner,
+        .contact {
+            background: #f7d9c4;
+            text-align: center;
+            padding: 25px;
+        }
+        .banner {
+            padding: 40px;
+        }
+        .banner h2,
+        .section h2,
+        .card h3 {
+            color: #7b2d26;
+        }
+        .section,
+        .offer {
+            text-align: center;
+            padding: 25px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            width: 220px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #ccc;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .price {
+            color: #a33b20;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .offer {
+            background: #ffe5b4;
+        }
+        .about {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.7;
+        }
+        footer {
+            padding: 15px;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+            .card {
+                width: 90%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweet Treats Bakery</h1>
+        <p>Freshly Baked Happiness Every Day!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cakes">Products</a>
+        <a href="#offers">Offers</a>
+        <a href="#about">About Us</a>
+        <a href="#6300144126">Contact</a>
+    </nav>
+    <div class="banner" id="home">
+        <h2>Welcome to Sweet Treats Bakery</h2>
+        <p>Delicious cakes, pastries and cookies made with love.</p>
+        <p>Make every celebration a little sweeter!</p>
+    </div>
+    <div class="section" id="cakes">
+        <h2>Our Popular Products</h2>
+        <p>Choose your favourite treat!</p>
+        <div class="products">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
+                alt="Chocolate cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and delicious chocolate cake.</p>
+                <p class="price">₹450</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80"
+                alt="Cupcakes">
+                <h3>Vanilla Cupcakes</h3>
+                <p>Soft cupcakes with creamy topping.</p>
+                <p class="price">₹80 each</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80"
+                alt="Pastries">
+                <h3>Fresh Pastries</h3>
+                <p>Delicious pastries for every occasion.</p>
+                <p class="price">₹100</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80"
+                alt="Cookies">
+                <h3>Chocolate Cookies</h3>
+                <p>Crunchy cookies with chocolate chips.</p>
+                <p class="price">₹120 per pack</p>
+            </div>
+        </div>
+    </div>
+    <div class="offer" id="offers">
+        <h2>Special Offer!</h2>
+        <p>Get <strong>10% OFF</strong> on your first order.</p>
+        <p>Visit our bakery and enjoy something sweet!</p>
+    </div>
+    <div class="section" id="about">
+        <h2>About Our Bakery</h2>
+        <div class="about">
+            <p>Sweet Treats Bakery makes delicious cakes,
+                pastries and cookies for every occasion.
+                We believe every celebration deserves a tasty treat.
+                Our goal is to serve fresh and delicious baked goods.</p>
+        </div>
+    </div>
+    <div class="contact" id="6300144126">
+        <h2>Contact Us</h2>
+        <p>Address: Eluru road, Gudivada</p>
+        <p>Phone: 98765 43210</p>
+        <p>Email: sweettreats@example.com</p>
+        <p>Opening Hours: 9:00 AM - 9:00 PM</p>
+    </div>
+</body>
+</html>
